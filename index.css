@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue&display=swap");
+
+:root {
+  --bg-color: rgb(7, 62, 82);
+  --main-bg-color: rgb(23, 44, 62);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  color: whitesmoke;
+  background: var(--bg-color);
+  padding-bottom: 20px;
+}
+header > h1 {
+  font-size: 35px;
+
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  background-color: var(--main-bg-color);
+  box-shadow: 0 0 30px rgb(142, 206, 206);
+  z-index: 1;
+  padding: 20px;
+  border-top: 4px solid rgb(2, 25, 28);
+  border-bottom: 4px solid rgb(2, 25, 28);
+}
+
+#scoreBoard,
+#status,
+#info,
+#tellStatus {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+#scoreBoard {
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  border-radius: 10px;
+  padding: 30px 30px;
+  border: 5px solid white;
+}
+
+.badge-left {
+  width: 50%;
+  padding-right: 30px;
+  border-right: 3px dotted white;
+}
+
+#myScore {
+  margin-left: 30px;
+}
+.badge-right {
+  width: 50%;
+  padding-left: 30px;
+}
+
+#computerScore {
+  margin-right: 30px;
+}
+
+#status {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#tellStatus {
+  font-size: 30px;
+}
+.sign-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-box {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 30px;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 270px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: rgb(13, 37, 53);
+}
+
+.sign-box:hover {
+  transform: scale(0.97);
+  filter: brightness(90%);
+  box-shadow: 0 0px 20px rgb(239, 247, 250);
+  background-color: rgb(45, 57, 74);
+}
+
+.sign-box > img {
+  filter: drop-shadow(0px 0px 5px #858585);
+  z-index: 1;
+}
+.sign-box > img:hover {
+  filter: brightness(200%);
+}
+footer {
+  position: relative;
+  z-index: -1;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 15px;
+  height: 10vh;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  margin: 0 30px;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.win-glow {
+  border-color: greenyellow;
+  box-shadow: 0 0 20px rgb(53, 255, 53) !important;
+  background: rgb(93, 184, 28) !important;
+}
+.lose-glow {
+  border-color: rgb(240, 92, 38);
+  box-shadow: 0 0 20px rgb(250, 174, 42) !important;
+  background: rgb(118, 13, 13) !important;
+}
+.draw-glow {
+  border-color: rgb(171, 171, 171);
+  box-shadow: 0 0 20px rgb(55, 55, 55) !important;
+  background: rgb(109, 109, 109) !important;
+}

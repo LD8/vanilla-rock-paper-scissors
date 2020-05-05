@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Rock Paper Scissors</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Vanilla Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+
+      <div id="scoreBoard">
+        <p class="badge-left"><span>My Score</span> <span id="myScore">0</span></p>
+        <p class="badge-right"><span id="computerScore">0</span> <span>Mac Score</span></p>
+      </div>
+
+      <div>
+        <p id="status">Who wins?</p>
+        <p id="tellStatus"></p>
+      </div>
+
+      <div class="sign-boxes">
+        <div id="rock" onclick="clearInfo(this.id)" class="sign-box">
+          <img src="img/vanilla-rock.png" alt="an image of rock for the game">
+        </div>
+        <div id="paper" onclick="clearInfo(this.id)" class="sign-box">
+          <img src="img/vanilla-paper.png" alt="an image of paper for the game">
+        </div>
+        <div id="scissors" onclick="clearInfo(this.id)" class="sign-box">
+          <img src="img/vanilla-scissors.png" alt="an image of scissors for the game">
+        </div>
+      </div>
+
+      <div>
+        <p id="info">Choose to start the game!</p>
+      </div>
+    </main>
+
+    <footer>
+      <p><a href="https://github.com/LD8" target="_blank">GitHub</a></p>
+      <p><span>By </span><a href="https://DonLee.online" target="_blank">Don Lee</a></p>
+    </footer>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
